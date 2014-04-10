@@ -11,6 +11,8 @@ alchemy_api_keys = [
   Api::ApiKey.new('1b626a3e33ec3bd617d1859b7c6e846cdfe38387', 500)
 ]
 
-#Runner.new('Boston Marathon Bombing', bing_api_keys).run!
-#Runner.new('Enron', bing_api_keys).run!
-Parser.new('Boston Marathon Bombing', alchemy_api_keys).run!(true)
+Runner.new('Boston Marathon Bombing', bing_api_keys).run!
+Runner.new('Enron', bing_api_keys).run!
+Runner.new('MH370', bing_api_keys).run!
+Runner.new('Sandy Hook Elementary', bing_api_keys).run!
+#Parser.new('Boston Marathon Bombing', alchemy_api_keys).run!

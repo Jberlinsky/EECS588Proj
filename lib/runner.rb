@@ -23,6 +23,7 @@ class Runner
   end
 
   def run!
+    puts "Working on query '#{@query}'"
     fetch_all_articles
     dump_articles_to_json!
   end
@@ -41,6 +42,7 @@ class Runner
   end
 
   def retrieve_article_slice(q, i)
+    puts "Getting articles #{i*bing.result_set_size} - #{(i+1)*bing.result_set_size}"
     result_set = bing.query(q, i*bing.result_set_size)
     result_set[0][:News].each do |result|
       @articles << {
