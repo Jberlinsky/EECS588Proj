@@ -1,8 +1,6 @@
 require_relative './lib/runner.rb'
 require_relative './lib/parser.rb'
 
-QUERY = 'Boston Marathon Bombing'
-
 bing_api_keys = [
   Api::ApiKey.new('4s/w/nR7qqkEPePsOIWMGTPrxzE2zenuw8FDpu8kqwc', 4_800)
 ]
@@ -11,8 +9,17 @@ alchemy_api_keys = [
   Api::ApiKey.new('1b626a3e33ec3bd617d1859b7c6e846cdfe38387', 500)
 ]
 
-Runner.new('Boston Marathon Bombing', bing_api_keys).run!
-Runner.new('Enron', bing_api_keys).run!
-Runner.new('MH370', bing_api_keys).run!
-Runner.new('Sandy Hook Elementary', bing_api_keys).run!
-#Parser.new('Boston Marathon Bombing', alchemy_api_keys).run!
+QUERIES = [
+  'Boston Marathon Bombing',
+  'Enron',
+  'MH370',
+  'Sandy Hook Elementary'
+]
+
+#QUERIES.each do |query|
+#  Runner.new(query, bing_api_keys).run!
+#end
+
+QUERIES.each do |query|
+  Parser.new(query, alchemy_api_keys).run!
+end
