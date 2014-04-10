@@ -4,15 +4,69 @@ require 'rgl/adjacency'
 require 'rgl/dot'
 require 'rgl/topsort'
 
+class Array
+  def bucket_sort
+    extract(buckets, dup)
+  end
+
+  def buckets
+    buckets_by
+  end
+
+  def buckets_by(&block)
+    dup.inject(Array.new(0)) do |tmp, n|
+      orig_n = n
+      n = block.call(n) if block_given?
+      k = n / 3
+      (tmp[k] ||= []) << orig_n
+      tmp
+    end
+  end
+
+  private
+
+  def extract(buckets, ary)
+    idx = 0
+    buckets.each do |b_ary|
+      next if b_ary.nil?
+      b_ary.sort
+      b_ary.each_with_index do |el, i|
+        ary[idx] = el
+        idx += 1
+      end
+    end
+    ary
+  end
+end
+
 # This is what gets stored in the dependency graph
 # #to_s allows us to use RGL while maintaining some semblance of state (date, url) from the article
-GraphedArticle = Struct.new(:name, :date, :url) do
+GraphedArticle = Struct.new(:name, :date, :url, :graph, :keyword) do
   def to_s
     name
   end
 
-  def full_description(graph)
-    "In this graph, #{name}, published on #{date} (#{url}), influences #{graph.out_degree(self)} articles"
+  def full_description(graph,dependents=false)
+    ret = "In this graph, #{name}, published on #{date} (#{url}), influences #{graph.out_degree(self)} articles"
+    if dependents
+      ret << "\nLeads to the following sources: "
+      printed = []
+      adjacent = graph.adjacent_vertices(self)
+
+      while adjacent.count > 0 do
+        v = adjacent.shift
+        next if printed.include?(v) || v == nil
+        ret << v.name
+        ret << "\n"
+        printed << v
+        adjacent += graph.adjacent_vertices(v)
+      end
+    end
+    ret
+  end
+
+  def influence(graph=self.graph)
+    graph.out_degree(self)
   end
 end
 
@@ -20,9 +74,9 @@ class Parser
   attr_accessor :query, :alchemy_api_keys
   attr_accessor :articles, :grouped_articles, :dependency_graphs
 
-  NUMBER_OF_ARTICLES_TO_TAG = 100 # Set to 0 to tag all the thing
-  NUMBER_OF_RELEVANT_KEYWORDS_TO_CONSIDER = 5
-  NUMBER_OF_KEYWORDS_TO_CONSIDER = 10
+  NUMBER_OF_ARTICLES_TO_TAG = 0 # Set to 0 to tag all the thing
+  NUMBER_OF_RELEVANT_KEYWORDS_TO_CONSIDER = 1
+  NUMBER_OF_KEYWORDS_TO_CONSIDER = 5
 
   def initialize(query, alchemy_api_keys)
     @query = query
@@ -62,10 +116,17 @@ class Parser
   def find_epicenters_and_most_influential
     # TODO implement
     # Find the most important node in each graph
+    best_vertices = []
     @dependency_graphs.each do |kw, graph|
-      puts "Keyword: #{kw}:"
-      best = graph.vertices.first # Obviously not...
-      puts best.full_description(graph)
+      next if graph.vertices.count <= 10
+      important_bucket = graph.vertices.buckets_by { |v| v.influence(graph) }.last
+      best = important_bucket.sort_by(&:date).first
+      # Group the vertices by order of magnitude; pick the most important order of magnitude
+      # Pick the first one reported in that order of magnitude
+      if best.influence(graph) > 10
+        puts "Keyword: #{kw}:"
+        puts best.full_description(graph, true)
+      end
     end
   end
 

@@ -5,6 +5,7 @@ require 'pry'
 require_relative './api/api.rb'
 
 class Runner
+  PAGES_TO_FETCH = 150
 # Access News API for topic
 # For every result (preferrably exhausting pagination if possible):
 #   Get the content of the news article
@@ -34,7 +35,7 @@ class Runner
 
   def fetch_all_articles
     @articles ||= []
-    100.times do |i|
+    PAGES_TO_FETCH.times do |i|
       (retrieve_article_slice(@query, i) and i += 1) while bing.can_query?
     end
   end

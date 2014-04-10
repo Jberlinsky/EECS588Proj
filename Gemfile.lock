@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/pricees/algoruby.git
+  revision: 0a7fb5c7ddb41487563b2a397a55ac6cfa1a17e1
+  specs:
+    algoruby (0.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -39,6 +45,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  algoruby!
   anemone
   httparty
   pry
