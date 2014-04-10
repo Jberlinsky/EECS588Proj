@@ -36,8 +36,8 @@ class Runner
 
   def fetch_all_articles
     @articles ||= []
-    PAGES_TO_FETCH.times do |i|
-      (retrieve_article_slice(@query, i) and i += 1) while bing.can_query?
+    (0...PAGES_TO_FETCH).each do |i|
+      (retrieve_article_slice(@query, i)) if bing.can_query?
     end
   end
 
