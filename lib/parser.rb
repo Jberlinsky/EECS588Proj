@@ -131,14 +131,14 @@ class Parser
           next if @dependency_graph.out_degree(root_node) == 0
           root_nodes.last[1] = depth if root_nodes.any?
           depth = 0
-          puts "Identified root node: #{root_node}: #{root_node.url}"
+          puts "Identified root node: #{root_node.full_description}"
           root_nodes << [root_node.id, 0]
           next_is_root = false
         else
           depth += 1
           print "|"
           depth.times { print "-" }
-          puts "#{root_node} : #{root_node.url}"
+          puts root_node.full_description
         end
         next_is_root = true if (@dependency_graph.out_degree(root_node) || 0) == 0
       end

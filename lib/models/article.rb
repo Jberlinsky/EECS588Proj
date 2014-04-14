@@ -12,6 +12,7 @@ class Article
   property :description, Text
   property :date, DateTime
   property :keyword, String
+  property :alexa_ranking, Integer
   property :parsed_contents, Text
 
   validates_uniqueness_of :url
@@ -31,6 +32,10 @@ class Article
     end
   end
 
+  def self.without_alexa_ranking
+    Article.all.all(alexa_ranking: nil)
+  end
+
   def to_s
     source + " (#{date.to_s})"
   end
@@ -47,5 +52,9 @@ class Article
 
   def contents
     parsed_contents || content
+  end
+
+  def full_description
+    "#{to_s} : #{url}. Alexa score: #{alexa_ranking}"
   end
 end

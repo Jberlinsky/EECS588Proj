@@ -3,6 +3,7 @@ require_relative './lib/parser.rb'
 require_relative './lib/extractor.rb'
 require_relative './lib/article_content_downloader.rb'
 require_relative './lib/models/models.rb'
+require_relative './lib/article_ranker.rb'
 
 #require 'facets'
 
@@ -63,6 +64,11 @@ puts "We now have #{Article.count} articles"
 QUERIES.each do |query|
   puts "Downloading content for articles in #{query}..."
   #ArticleContentDownloader.new(query).run!
+end
+
+puts "Getting Alexa rankings..."
+Article.without_alexa_ranking.each do |article|
+  ArticleRanker.perform(article.id)
 end
 
 root_nodes = []

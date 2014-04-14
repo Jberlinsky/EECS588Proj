@@ -23,7 +23,7 @@ We have established a quorum, skipping...
 We have established a quorum, skipping...
 We have established a quorum, skipping...
 We have established a quorum, skipping...
-We now have 4826 articles
+We now have 4431 articles
 Downloading content for articles in Boston Marathon Bombing...
 Downloading content for articles in Enron...
 Downloading content for articles in MH370...
@@ -49,284 +49,216 @@ Downloading content for articles in AptiQuant Internet Explorer IQ...
 Downloading content for articles in Will Smith Dead...
 Downloading content for articles in Betty White Dead...
 Downloading content for articles in KFC Mutant Chicken...
+Getting Alexa rankings...
 Running parser for Boston Marathon Bombing...
-Identified root node: Police one.com (2014-03-19T21:34:25+00:00): http://www.policeone.com/police-products/vehicles/specialty/articles/6990737-5-critical-lessons-about-armored-vehicles-from-the-Boston-Marathon-Bombing/
-|-AmmoLand.com - Shooting Sports News (2014-03-20T23:56:24+00:00) : http://www.ammoland.com/2014/03/lessons-learned-from-the-boston-marathon-bombing/
-Identified root node: WAFB 9 Baton Rouge (2013-05-16T17:15:44+00:00): http://www.wafb.com/category/262377/boston-marathon-bombing
-|-WNEM.COM (2013-05-16T17:15:44+00:00) : http://www.wnem.com/category/262377/boston-marathon-bombing
+Identified root node: Police one.com (2014-03-19T21:34:25+00:00) : http://www.policeone.com/police-products/vehicles/specialty/articles/6990737-5-critical-lessons-about-armored-vehicles-from-the-Boston-Marathon-Bombing/. Alexa score: 18181
+|-AmmoLand.com - Shooting Sports News (2014-03-20T23:56:24+00:00) : http://www.ammoland.com/2014/03/lessons-learned-from-the-boston-marathon-bombing/. Alexa score: 70622
+Identified root node: WAFB 9 Baton Rouge (2013-05-16T17:15:44+00:00) : http://www.wafb.com/category/262377/boston-marathon-bombing. Alexa score: 97727
+|-WNEM.COM (2013-05-16T17:15:44+00:00) : http://www.wnem.com/category/262377/boston-marathon-bombing. Alexa score: 65843
 Running parser for Enron...
-Identified root node: Rediff India Abroad (2013-06-22T08:17:56+00:00): http://www.rediff.com/money/report/slide-show-1-former-enron-ceo-sentence-cut-by-10-years/20130622.htm
-|-Rediff (2013-06-22T08:17:56+00:00) : http://www.rediff.com/business/slide-show/slide-show-1-former-enron-ceo-sentence-cut-by-10-years/20130622.htm
+Identified root node: Rediff India Abroad (2013-06-22T08:17:56+00:00) : http://www.rediff.com/money/report/slide-show-1-former-enron-ceo-sentence-cut-by-10-years/20130622.htm. Alexa score: 254
+|-Rediff (2013-06-22T08:17:56+00:00) : http://www.rediff.com/business/slide-show/slide-show-1-former-enron-ceo-sentence-cut-by-10-years/20130622.htm. Alexa score: 254
 Running parser for MH370...
-Identified root node: Reuters Group PLC (2014-04-11T04:32:08+00:00): http://in.reuters.com/article/2014/04/11/malaysia-airlines-wrapup-3-pictures-tv-g-idINL3N0N30TR20140411
-|-Thomson Reuters (2014-04-11T05:50:53+00:00) : http://www.reuters.com/article/2014/04/11/us-malaysia-airlines-idUSBREA3A06W20140411
+Identified root node: Reuters Group PLC (2014-04-11T04:32:08+00:00) : http://in.reuters.com/article/2014/04/11/malaysia-airlines-wrapup-3-pictures-tv-g-idINL3N0N30TR20140411. Alexa score: 272
+|-Thomson Reuters (2014-04-11T05:50:53+00:00) : http://www.reuters.com/article/2014/04/11/us-malaysia-airlines-idUSBREA3A06W20140411. Alexa score: 272
 Running parser for Sandy Hook Elementary...
-Identified root node: The Huffington Post (2014-04-08T19:37:38+00:00): http://www.huffingtonpost.com/2014/04/09/mass-shooting-victims-fam_n_5118161.html
-|-ABC News (2014-04-11T03:06:14+00:00) : http://abcnews.go.com/US/wireStory/mass-shooting-victims-families-helping-fort-hood-23266622?pt=BureoF2GVB|0|0|0|0|0|1058286187.94951
-Identified root node: Your Houston News (2014-04-08T22:29:26+00:00): http://www.yourhoustonnews.com/courier/opinion/whatever-the-cause-of-this-fort-hood-tragedy-simmering-anger/article_1e4f202a-1e05-5ba0-ac6d-19952624fa17.html
-|-Odessa American (2014-04-09T04:55:59+00:00) : http://www.oaoa.com/editorial/views/texas_opinion/article_39bb6872-bf81-11e3-805e-001a4bcf6878.html
-Identified root node: The News-Herald (2014-02-13T11:44:49+00:00): http://www.thenewsherald.com/articles/2014/02/13/news/doc52fa646bdcea9142044095.txt
-|-News-Herald (2014-02-15T10:45:10+00:00) : http://www.thenewsherald.com/articles/2014/02/15/news/doc52fa646bdcea9142044095.txt
+Identified root node: Your Houston News (2014-04-08T22:29:26+00:00) : http://www.yourhoustonnews.com/courier/opinion/whatever-the-cause-of-this-fort-hood-tragedy-simmering-anger/article_1e4f202a-1e05-5ba0-ac6d-19952624fa17.html. Alexa score: 84555
+|-Odessa American (2014-04-09T04:55:59+00:00) : http://www.oaoa.com/editorial/views/texas_opinion/article_39bb6872-bf81-11e3-805e-001a4bcf6878.html. Alexa score: 275849
+Identified root node: The News-Herald (2014-02-13T11:44:49+00:00) : http://www.thenewsherald.com/articles/2014/02/13/news/doc52fa646bdcea9142044095.txt. Alexa score: 305410
+|-News-Herald (2014-02-15T10:45:10+00:00) : http://www.thenewsherald.com/articles/2014/02/15/news/doc52fa646bdcea9142044095.txt. Alexa score: 305410
 Running parser for Heartbleed...
-Identified root node: Guelph Mercury (2014-04-09T18:10:33+00:00): http://www.guelphmercury.com/news-story/4456018--heartbleed-computer-bug-prompts-internet-security-concerns/
-|-Boston (2014-04-08T23:55:20+00:00) : http://www.boston.com/business/technology/2014/04/09/what-you-need-know-about-the-heartbleed-bug/2taPXFwpri6h03ITWb5ooK/story.html
-|--St. Louis Post-Dispatch (2014-04-09T14:50:07+00:00) : http://www.stltoday.com/business/technology/what-you-need-to-know-about-the-heartbleed-bug/article_98e3c668-39e4-50b3-81a6-65eff9e84f9e.html
-|---Statesman (2014-04-09T19:22:08+00:00) : http://www.statesman.com/ap/ap/business/what-you-need-to-know-about-the-heartbleed-bug/nfWrw/
-|----News-Times (2014-04-09T19:36:27+00:00) : http://www.newstimes.com/business/technology/article/What-you-need-to-know-about-the-Heartbleed-bug-5389680.php
-|-----WJTV (2014-04-09T19:57:56+00:00) : http://www.wjtv.com/story/25205982/what-you-need-to-know-about-the-heartbleed-bug
-|------nanaimodailynews.com (2014-04-09T21:02:21+00:00) : http://www.nanaimodailynews.com/business/answers-to-common-questions-about-the-heartbleed-bug-and-how-to-protect-against-it-1.948867
-|-------WWL-TV (2014-04-09T21:23:50+00:00) : http://www.wwltv.com/news/national/254599901.html
-|--------The Daily Jeffersonian (2014-04-10T01:05:44+00:00) : http://www.daily-jeff.com/ap%20general%20news/2014/04/09/what-you-need-to-know-about-the-heartbleed-bug
-Identified root node: RTV 6 ABC (2014-04-09T11:15:22+00:00): http://www.theindychannel.com/news/heartbleed-threat-online-security-flaw-exposes-millions-of-passwords_
-|-Your West Valley (2014-04-09T17:41:55+00:00) : http://www.yourwestvalley.com/nation_world/article_f8332336-c011-11e3-a199-001a4bcf887a.html
-Identified root node: Business Spectator (2014-04-09T00:02:30+00:00): http://www.businessspectator.com.au/news/2014/4/9/technology/heartbleed-bug-worldwide-threat-user-data
-|-AsiaOne (2014-04-11T07:38:15+00:00) : http://news.asiaone.com/news/digital1/heartbleed-bug-web-technology-seen-major-threat-user-data
-Identified root node: Reuters Group PLC (2014-04-09T00:23:58+00:00): http://in.reuters.com/article/2014/04/09/cybersecurity-internet-bug-idINL2N0N026420140409
-|-790 KGMI News Talk (2014-04-09T14:50:07+00:00) : http://kgmi.com/news/030030-new-heartbleed-bug-poses-threat-to-data-security/
-Identified root node: Hutchinson News (2014-04-09T17:56:14+00:00): http://www.hutchnews.com/ap/business/article_8703e098-5633-5285-8ef8-0fcb55156032.html
-|-Corpus Christi Caller (2014-04-10T00:29:57+00:00) : http://www.caller.com/news/2014/apr/09/heartbleed-bug-causes-major-security-headache/
-Identified root node: Wirral Globe (2014-04-09T15:40:14+00:00): http://www.wirralglobe.co.uk/uk_national_news/11137559.Heartbleed_bug_hits_web_security/
-|-Burnham and Highbridge Weekly News (2014-04-09T16:16:01+00:00) : http://www.burnhamandhighbridgeweeklynews.co.uk/news/national/news/11137559.Heartbleed_bug_hits_web_security/?ref=mnnp
-Identified root node: XIN MSN Lifestyle Tech (2014-04-08T23:55:20+00:00): http://technology.xin.msn.com/technology-news/heartbleed-bug-puts-encrypted-data-in-danger-2
-|-XIN MSN News (2014-04-09T03:08:37+00:00) : http://news.xin.msn.com/en/sci-tech/heartbleed-bug-puts-encrypted-data-in-danger-5
-Identified root node: The Huffington Post (2014-04-09T04:27:21+00:00): http://www.huffingtonpost.com/huff-wires/20140409/us-tec--internet-security-threat/
-|-News Talk 610 CKTB (2014-04-09T11:22:32+00:00) : http://www.610cktb.com/BusinessCP/Article.aspx?id=415904
-|--Boston Herald (2014-04-09T15:47:23+00:00) : http://bostonherald.com/business/technology/technology_news/2014/04/heartbleed_exposes_millions_of_online_passwords
-|---WSAV 3 (2014-04-09T16:44:39+00:00) : http://www.wsav.com/story/25198832/heartbleed-exposes-millions-of-online-passwords
-|----The State Journal (2014-04-09T16:44:39+00:00) : http://www.statejournal.com/story/25198832/heartbleed-exposes-millions-of-online-passwords
-|-----My Fox Chicago (2014-04-09T16:44:39+00:00) : http://www.myfoxchicago.com/story/25198832/heartbleed-exposes-millions-of-online-passwords
-|------MyFox Phoenix (2014-04-09T16:58:58+00:00) : http://www.myfoxphoenix.com/story/25198832/heartbleed-exposes-millions-of-online-passwords
-|-------My FOX Austin (2014-04-09T18:17:43+00:00) : http://www.myfoxaustin.com/story/25198832/heartbleed-bug-causes-major-security-headache
-|--------nst.com.my (2014-04-10T06:56:29+00:00) : http://www.nst.com.my/latest/heartbleed-bug-causes-major-security-headache-across-internet-1.559648
-|---------Taiwan News (2014-04-10T07:53:45+00:00) : http://www.taiwannews.com.tw/etn/news_content.php?id=2456322&lang=eng_news&cate_rss=WORLD_eng
-Identified root node: wcti12.com (2014-04-07T23:56:31+00:00): http://www.wcti12.com/news/technology/-Heartbleed-security-flaw-affects-most-sites/25388478
-|-WDSU NewsChannel 6 (2014-04-09T10:10:57+00:00) : http://www.wdsu.com/money/technology/-Heartbleed-security-flaw-affects-most-sites/25388478
-|--NewsChannel 3 (2014-04-09T13:24:13+00:00) : http://www.keyt.com/lifestyle/technology/-Heartbleed-security-flaw-affects-most-sites/25388478
-Identified root node: KSAT (2014-04-09T14:57:17+00:00): http://www.ksat.com/lifestyle/money/Heartbleed-bug-What-you-need-to-know/25393778
-|-KION 46 Central Coast News (2014-04-09T14:57:17+00:00) : http://www.kionrightnow.com/life/money/Heartbleed-bug-What-you-need-to-know/25393778
-|--Krdo Breaking News (2014-04-09T14:57:17+00:00) : http://www.krdo.com/news/economy-tracker/Heartbleed-bug-What-you-need-to-know/25393778
-|---NewsChannel 3 (2014-04-09T14:57:17+00:00) : http://www.keyt.com/news/money/Heartbleed-bug-What-you-need-to-know/25393778
-|----KY3 (2014-04-09T14:57:17+00:00) : http://www.ky3.com/news/business/Heartbleed-bug-What-you-need-to-know/21049046_25393778
-|-----KITV News (2014-04-09T16:23:11+00:00) : http://www.kitv.com/money/Heartbleed-bug-What-you-need-to-know/25393778
-Identified root node: Leaf Chronicle (2014-04-09T15:25:55+00:00): http://www.theleafchronicle.com/usatoday/article/7501033
-|-Daily News Journal (2014-04-09T16:01:42+00:00) : http://www.dnj.com/usatoday/article/7501033
-|--USA Today (2014-04-09T19:43:37+00:00) : http://www.usatoday.com/story/tech/2014/04/09/heartbleed-five-questions/7501033/
+Identified root node: Guelph Mercury (2014-04-09T18:10:33+00:00) : http://www.guelphmercury.com/news-story/4456018--heartbleed-computer-bug-prompts-internet-security-concerns/. Alexa score: 224382
+|-Corpus Christi Caller (2014-04-10T00:29:57+00:00) : http://www.caller.com/news/2014/apr/09/heartbleed-bug-causes-major-security-headache/. Alexa score: 191458
+Identified root node: News Talk 610 CKTB (2014-04-09T11:22:32+00:00) : http://www.610cktb.com/BusinessCP/Article.aspx?id=415904. Alexa score: 519909
+|-Boston Herald (2014-04-09T15:47:23+00:00) : http://bostonherald.com/business/technology/technology_news/2014/04/heartbleed_exposes_millions_of_online_passwords. Alexa score: 8824
+|--nst.com.my (2014-04-10T06:56:29+00:00) : http://www.nst.com.my/latest/heartbleed-bug-causes-major-security-headache-across-internet-1.559648. Alexa score: 8424
+Identified root node: Business Spectator (2014-04-09T00:02:30+00:00) : http://www.businessspectator.com.au/news/2014/4/9/technology/heartbleed-bug-worldwide-threat-user-data. Alexa score: 25866
+|-AsiaOne (2014-04-11T07:38:15+00:00) : http://news.asiaone.com/news/digital1/heartbleed-bug-web-technology-seen-major-threat-user-data. Alexa score: 6335
+Identified root node: Reuters Group PLC (2014-04-09T00:23:58+00:00) : http://in.reuters.com/article/2014/04/09/cybersecurity-internet-bug-idINL2N0N026420140409. Alexa score: 272
+|-790 KGMI News Talk (2014-04-09T14:50:07+00:00) : http://kgmi.com/news/030030-new-heartbleed-bug-poses-threat-to-data-security/. Alexa score: 795811
+Identified root node: Wirral Globe (2014-04-09T15:40:14+00:00) : http://www.wirralglobe.co.uk/uk_national_news/11137559.Heartbleed_bug_hits_web_security/. Alexa score: 455671
+|-Burnham and Highbridge Weekly News (2014-04-09T16:16:01+00:00) : http://www.burnhamandhighbridgeweeklynews.co.uk/news/national/news/11137559.Heartbleed_bug_hits_web_security/?ref=mnnp. Alexa score: 3687416
+Identified root node: XIN MSN Lifestyle Tech (2014-04-08T23:55:20+00:00) : http://technology.xin.msn.com/technology-news/heartbleed-bug-puts-encrypted-data-in-danger-2. Alexa score: 33
+|-XIN MSN News (2014-04-09T03:08:37+00:00) : http://news.xin.msn.com/en/sci-tech/heartbleed-bug-puts-encrypted-data-in-danger-5. Alexa score: 33
+Identified root node: wcti12.com (2014-04-07T23:56:31+00:00) : http://www.wcti12.com/news/technology/-Heartbleed-security-flaw-affects-most-sites/25388478. Alexa score: 211461
+|-WDSU NewsChannel 6 (2014-04-09T10:10:57+00:00) : http://www.wdsu.com/money/technology/-Heartbleed-security-flaw-affects-most-sites/25388478. Alexa score: 86518
+|--NewsChannel 3 (2014-04-09T13:24:13+00:00) : http://www.keyt.com/lifestyle/technology/-Heartbleed-security-flaw-affects-most-sites/25388478. Alexa score: 104199
+Identified root node: KSAT (2014-04-09T14:57:17+00:00) : http://www.ksat.com/lifestyle/money/Heartbleed-bug-What-you-need-to-know/25393778. Alexa score: 46568
+|-KION 46 Central Coast News (2014-04-09T14:57:17+00:00) : http://www.kionrightnow.com/life/money/Heartbleed-bug-What-you-need-to-know/25393778. Alexa score: 260100
+|--Krdo Breaking News (2014-04-09T14:57:17+00:00) : http://www.krdo.com/news/economy-tracker/Heartbleed-bug-What-you-need-to-know/25393778. Alexa score: 101499
+|---NewsChannel 3 (2014-04-09T14:57:17+00:00) : http://www.keyt.com/news/money/Heartbleed-bug-What-you-need-to-know/25393778. Alexa score: 104199
+|----KY3 (2014-04-09T14:57:17+00:00) : http://www.ky3.com/news/business/Heartbleed-bug-What-you-need-to-know/21049046_25393778. Alexa score: 47866
+|-----KITV News (2014-04-09T16:23:11+00:00) : http://www.kitv.com/money/Heartbleed-bug-What-you-need-to-know/25393778. Alexa score: 86961
+Identified root node: Leaf Chronicle (2014-04-09T15:25:55+00:00) : http://www.theleafchronicle.com/usatoday/article/7501033. Alexa score: 200525
+|-Daily News Journal (2014-04-09T16:01:42+00:00) : http://www.dnj.com/usatoday/article/7501033. Alexa score: 190446
+|--USA Today (2014-04-09T19:43:37+00:00) : http://www.usatoday.com/story/tech/2014/04/09/heartbleed-five-questions/7501033/. Alexa score: 263
 Running parser for Crimea...
 Running parser for Toyota Recall...
-Identified root node: Thomson Reuters (2014-04-09T20:40:53+00:00): http://www.reuters.com/article/2014/04/10/us-toyota-motor-recall-idUSBREA3902Q20140410
-|-Reuters Group PLC (2014-04-10T01:12:54+00:00) : http://in.reuters.com/article/2014/04/10/toyota-motor-recall-idINL3N0N116U20140410
+Identified root node: Thomson Reuters (2014-04-09T20:40:53+00:00) : http://www.reuters.com/article/2014/04/10/us-toyota-motor-recall-idUSBREA3902Q20140410. Alexa score: 272
+|-Reuters Group PLC (2014-04-10T01:12:54+00:00) : http://in.reuters.com/article/2014/04/10/toyota-motor-recall-idINL3N0N116U20140410. Alexa score: 272
 Running parser for Rob Ford...
 Running parser for Ford Recall...
-Identified root node: Bloomberg (2014-03-24T14:47:37+00:00): http://www.bloomberg.com/news/2014-03-24/upton-shaped-by-ford-tire-recall-faces-gm-14-years-later.html
-|-Claims Journal (2014-03-24T17:17:57+00:00) : http://www.claimsjournal.com/news/national/2014/03/24/246367.htm
+Identified root node: Bloomberg (2014-03-24T14:47:37+00:00) : http://www.bloomberg.com/news/2014-03-24/upton-shaped-by-ford-tire-recall-faces-gm-14-years-later.html. Alexa score: 328
+|-Claims Journal (2014-03-24T17:17:57+00:00) : http://www.claimsjournal.com/news/national/2014/03/24/246367.htm. Alexa score: 279421
 Running parser for Egypt President Morsi...
 Running parser for Silk Road Dread Pirate...
-Identified root node: MSN (2013-10-03T11:02:07+00:00): http://news.ca.msn.com/top-stories/silk-roads-alleged-mastermind-how-the-fbi-caught-him-1
-|-CTV News (2013-10-03T13:18:07+00:00) : http://www.ctvnews.ca/world/fbi-shuts-down-underground-drug-website-silk-road-1.1481520
-|--NBC Dallas-Fort Worth 5 (2013-10-03T14:58:20+00:00) : http://www.nbcdfw.com/news/local/Austin-Native-Charged-in-Black-Market-Silk-Road-226306951.html
-Identified root node: IT World (2013-11-07T01:45:12+00:00): http://www.itworld.com/legal/381835/silk-road-online-drug-marketplace-resurfaces
-|-Network World (2013-11-07T04:15:32+00:00) : http://www.networkworld.com/news/2013/110713-silk-road-online-drug-marketplace-275713.html
-|--CSO Magazine (2013-11-07T04:51:19+00:00) : http://www.cso.com.au/article/531222/silk_road_online_drug_marketplace_resurfaces/
-|---news.techworld.com (2013-11-07T06:53:01+00:00) : http://news.techworld.com/security/3481133/silk-road-online-drug-marketplace-resurfaces/
-Identified root node: WBUR (2013-10-03T20:13:18+00:00): http://www.wbur.org/npr/228923016
-|-NPR News (2013-10-03T20:41:56+00:00) : http://www.npr.org/templates/story/story.php?storyId=228923016
-Identified root node: CIO (2013-11-22T02:39:00+00:00): http://www.cio.com/article/743609/Silk_Road_Defendant_Deemed_Flight_Risk_Denied_Bail
-|-MIS Asia (2013-11-25T02:13:58+00:00) : http://www.mis-asia.com/resource/legal/silk-road-defendant-deemed-flight-risk-denied-bail/
-Identified root node: Reuters (2014-03-22T05:45:58+00:00): http://uk.reuters.com/article/2014/03/22/uk-australia-silkroad-extradition-idUKBREA2L03H20140322
-|-7 News Yahoo (2014-03-22T05:53:07+00:00) : http://au.news.yahoo.com/a/22112669/australia-mulls-extradition-of-alleged-silk-road-moderator/
-|--Chicago Tribune (2014-03-22T05:53:07+00:00) : http://articles.chicagotribune.com/2014-03-22/business/sns-rt-us-australia-silkroad-extradition-20140321_1_pirate-roberts-silk-road-extradition-rights
-Identified root node: The Malaysian Digest (2013-02-08T01:17:02+00:00): http://www.malaysiandigest.com/business/249892-stronger-growth-fiscal-deficit-figures-for-malaysia.html?tmpl=component&layout=default&page=
-|-Townhall.com (2013-10-02T15:35:19+00:00) : http://townhall.com/news/us/2013/10/02/fbi-raids-alleged-online-drug-market-silk-road-arrests-owner-n1715280
-|--Yahoo News Canada (2013-10-02T20:43:07+00:00) : https://ca.news.yahoo.com/fbi-raids-alleged-online-drug-market-silk-road-153729457.html
-|---MSN News (2013-10-02T23:06:17+00:00) : http://news.msn.com/crime-justice/fbi-raids-online-drug-market-silk-road-arrests-owner
-|----Reuters Group PLC (2013-10-02T23:34:55+00:00) : http://in.reuters.com/article/2013/10/02/crime-silkroad-raid-idINDEE99107220131002
-|-----thestar.com.my (2013-10-03T00:46:30+00:00) : http://www.thestar.com.my/Tech/Tech-News/2013/10/03/FBI-shuts-alleged-online-drug-marketplace-Silk-Road.aspx/
-Identified root node: Australian Techworld (2014-01-15T23:53:33+00:00): http://www.techworld.com.au/article/536160/us_forces_silk_road_give_up_28m_bitcoins/
-|-news.techworld.com (2014-01-17T09:03:33+00:00) : http://news.techworld.com/security/3497577/us-forces-silk-road-to-give-up-28m-in-bitcoins/
-Identified root node: Capital Public Radio (2013-10-03T19:37:30+00:00): http://www.capradio.org/news/npr/story?storyid=228845525
-|-KPBS (2013-10-03T19:37:30+00:00) : http://www.kpbs.org/news/2013/oct/03/what-we-know-about-ross-ulbricht-or-dread-pirate/
-Identified root node: Pioneer Press (2014-02-04T20:52:21+00:00): http://www.twincities.com/breakingnews/ci_25060267/alleged-silk-road-mastermind-indicted-ny
-|-Inside Bay Area (2014-04-01T23:56:29+00:00) : http://www.insidebayarea.com/california/ci_25060267/alleged-silk-road-mastermind-indicted-ny
-Identified root node: Daily Telegraph (2013-10-03T18:40:14+00:00): http://www.dailytelegraph.com.au/technology/news/silk-road-pirate-wanted-to-change-the-world-and-get-around-government-coercion-with-online-drug-seller/story-fni0bzoc-1226732649800
-|-The Australian (2013-10-03T23:55:12+00:00) : http://www.theaustralian.com.au/news/silk-road-pirate-wanted-to-change-the-world-and-get-around-government-coercion-with-online-drug-seller/story-e6frg6n6-1226732649800
-Identified root node: kenoradailyminerandnews.com (2013-11-06T13:49:23+00:00): http://www.kenoradailyminerandnews.com/2013/11/06/silk-road-back-online-after-fbi-bust
-|-Kingston Whig (2013-11-06T13:49:23+00:00) : http://www.thewhig.com/2013/11/06/silk-road-back-online-after-fbi-bust
-|--Thomson Reuters (2013-11-07T08:40:23+00:00) : http://www.reuters.com/article/2013/11/07/us-crime-silkroad-idUSBRE9A608I20131107
-|---PC Pro (2013-11-07T09:01:52+00:00) : http://www.pcpro.co.uk/news/385243/silk-road-drug-site-returns-a-month-after-fbi-takedown
-|----NDTV (2013-11-07T10:27:46+00:00) : http://www.ndtv.com/article/world/new-silk-road-drug-bazaar-opens-a-month-after-fbi-bust-442916
-|-----DAWN Group (2013-11-07T11:10:43+00:00) : http://www.dawn.com/news/1054788/new-silk-road-drug-bazaar-opens-a-month-after-fbi-bust
-|------NDTV (2013-11-07T13:33:53+00:00) : http://gadgets.ndtv.com/internet/news/new-silk-road-online-drug-marketplace-opens-a-month-after-fbi-bust-442895
-Identified root node: Cincinnati.com (2013-10-21T21:53:39+00:00): http://news.cincinnati.com/usatoday/article/2984921
-|-Coloradoan (2013-10-21T22:07:58+00:00) : http://www.coloradoan.com/usatoday/article/2984921
-|--WTSP (2013-10-21T23:55:20+00:00) : http://www.wtsp.com/rss/article/341374/81/How-FBI-brought-down-cyber-underworld-site-Silk-Road
+Identified root node: IT World (2013-11-07T01:45:12+00:00) : http://www.itworld.com/legal/381835/silk-road-online-drug-marketplace-resurfaces. Alexa score: 9094
+|-Network World (2013-11-07T04:15:32+00:00) : http://www.networkworld.com/news/2013/110713-silk-road-online-drug-marketplace-275713.html. Alexa score: 9208
+|--CSO Magazine (2013-11-07T04:51:19+00:00) : http://www.cso.com.au/article/531222/silk_road_online_drug_marketplace_resurfaces/. Alexa score: 202266
+|---news.techworld.com (2013-11-07T06:53:01+00:00) : http://news.techworld.com/security/3481133/silk-road-online-drug-marketplace-resurfaces/. Alexa score: 51499
+Identified root node: WBUR (2013-10-03T20:13:18+00:00) : http://www.wbur.org/npr/228923016. Alexa score: 16978
+|-NPR News (2013-10-03T20:41:56+00:00) : http://www.npr.org/templates/story/story.php?storyId=228923016. Alexa score: 637
+Identified root node: CIO (2013-11-22T02:39:00+00:00) : http://www.cio.com/article/743609/Silk_Road_Defendant_Deemed_Flight_Risk_Denied_Bail. Alexa score: 6745
+|-MIS Asia (2013-11-25T02:13:58+00:00) : http://www.mis-asia.com/resource/legal/silk-road-defendant-deemed-flight-risk-denied-bail/. Alexa score: 800508
+Identified root node: Reuters (2014-03-22T05:45:58+00:00) : http://uk.reuters.com/article/2014/03/22/uk-australia-silkroad-extradition-idUKBREA2L03H20140322. Alexa score: 272
+|-7 News Yahoo (2014-03-22T05:53:07+00:00) : http://au.news.yahoo.com/a/22112669/australia-mulls-extradition-of-alleged-silk-road-moderator/. Alexa score: 4
+|--Chicago Tribune (2014-03-22T05:53:07+00:00) : http://articles.chicagotribune.com/2014-03-22/business/sns-rt-us-australia-silkroad-extradition-20140321_1_pirate-roberts-silk-road-extradition-rights. Alexa score: 1213
+Identified root node: The Malaysian Digest (2013-02-08T01:17:02+00:00) : http://www.malaysiandigest.com/business/249892-stronger-growth-fiscal-deficit-figures-for-malaysia.html?tmpl=component&layout=default&page=. Alexa score: 28588
+|-Townhall.com (2013-10-02T15:35:19+00:00) : http://townhall.com/news/us/2013/10/02/fbi-raids-alleged-online-drug-market-silk-road-arrests-owner-n1715280. Alexa score: 5141
+|--Yahoo News Canada (2013-10-02T20:43:07+00:00) : https://ca.news.yahoo.com/fbi-raids-alleged-online-drug-market-silk-road-153729457.html. Alexa score: 4
+|---MSN News (2013-10-02T23:06:17+00:00) : http://news.msn.com/crime-justice/fbi-raids-online-drug-market-silk-road-arrests-owner. Alexa score: 33
+|----Reuters Group PLC (2013-10-02T23:34:55+00:00) : http://in.reuters.com/article/2013/10/02/crime-silkroad-raid-idINDEE99107220131002. Alexa score: 272
+|-----thestar.com.my (2013-10-03T00:46:30+00:00) : http://www.thestar.com.my/Tech/Tech-News/2013/10/03/FBI-shuts-alleged-online-drug-marketplace-Silk-Road.aspx/. Alexa score: 2805
+Identified root node: Australian Techworld (2014-01-15T23:53:33+00:00) : http://www.techworld.com.au/article/536160/us_forces_silk_road_give_up_28m_bitcoins/. Alexa score: 129461
+|-news.techworld.com (2014-01-17T09:03:33+00:00) : http://news.techworld.com/security/3497577/us-forces-silk-road-to-give-up-28m-in-bitcoins/. Alexa score: 51499
+Identified root node: Capital Public Radio (2013-10-03T19:37:30+00:00) : http://www.capradio.org/news/npr/story?storyid=228845525. Alexa score: 166945
+|-KPBS (2013-10-03T19:37:30+00:00) : http://www.kpbs.org/news/2013/oct/03/what-we-know-about-ross-ulbricht-or-dread-pirate/. Alexa score: 56907
+Identified root node: Pioneer Press (2014-02-04T20:52:21+00:00) : http://www.twincities.com/breakingnews/ci_25060267/alleged-silk-road-mastermind-indicted-ny. Alexa score: 17274
+|-Inside Bay Area (2014-04-01T23:56:29+00:00) : http://www.insidebayarea.com/california/ci_25060267/alleged-silk-road-mastermind-indicted-ny. Alexa score: 40629
+Identified root node: Cincinnati.com (2013-10-21T21:53:39+00:00) : http://news.cincinnati.com/usatoday/article/2984921. Alexa score: 16735
+|-Coloradoan (2013-10-21T22:07:58+00:00) : http://www.coloradoan.com/usatoday/article/2984921. Alexa score: 43522
+|--WTSP (2013-10-21T23:55:20+00:00) : http://www.wtsp.com/rss/article/341374/81/How-FBI-brought-down-cyber-underworld-site-Silk-Road. Alexa score: 33855
+Identified root node: kenoradailyminerandnews.com (2013-11-06T13:49:23+00:00) : http://www.kenoradailyminerandnews.com/2013/11/06/silk-road-back-online-after-fbi-bust. Alexa score: 1569527
+|-Kingston Whig (2013-11-06T13:49:23+00:00) : http://www.thewhig.com/2013/11/06/silk-road-back-online-after-fbi-bust. Alexa score: 146022
+|--Thomson Reuters (2013-11-07T08:40:23+00:00) : http://www.reuters.com/article/2013/11/07/us-crime-silkroad-idUSBRE9A608I20131107. Alexa score: 272
+|---PC Pro (2013-11-07T09:01:52+00:00) : http://www.pcpro.co.uk/news/385243/silk-road-drug-site-returns-a-month-after-fbi-takedown. Alexa score: 10292
+|----NDTV (2013-11-07T10:27:46+00:00) : http://www.ndtv.com/article/world/new-silk-road-drug-bazaar-opens-a-month-after-fbi-bust-442916. Alexa score: 264
+|-----DAWN Group (2013-11-07T11:10:43+00:00) : http://www.dawn.com/news/1054788/new-silk-road-drug-bazaar-opens-a-month-after-fbi-bust. Alexa score: 3303
+|------NDTV (2013-11-07T13:33:53+00:00) : http://gadgets.ndtv.com/internet/news/new-silk-road-online-drug-marketplace-opens-a-month-after-fbi-bust-442895. Alexa score: 264
+Identified root node: Daily Telegraph (2013-10-03T18:40:14+00:00) : http://www.dailytelegraph.com.au/technology/news/silk-road-pirate-wanted-to-change-the-world-and-get-around-government-coercion-with-online-drug-seller/story-fni0bzoc-1226732649800. Alexa score: 5824
+|-The Australian (2013-10-03T23:55:12+00:00) : http://www.theaustralian.com.au/news/silk-road-pirate-wanted-to-change-the-world-and-get-around-government-coercion-with-online-drug-seller/story-e6frg6n6-1226732649800. Alexa score: 4128
 Running parser for PRISM...
-Identified root node: FOX News (2013-06-15T12:51:05+00:00): http://www.foxnews.com/us/2013/06/15/what-makes-prism-shine-national-security-agency-megadata-collection-from/
-|-9News (2013-06-15T20:29:13+00:00) : http://archive.9news.com/rss/story.aspx?storyid=340921
 Running parser for Snowden...
-Identified root node: Examiner (2014-01-29T03:27:12+00:00): http://www.examiner.com/article/edward-snowden-s-psychic-human-ets-revealed
-|-UFODigest (2014-01-29T13:49:58+00:00) : http://ufodigest.com/article/edward-snowden-0129
+Identified root node: Examiner (2014-01-29T03:27:12+00:00) : http://www.examiner.com/article/edward-snowden-s-psychic-human-ets-revealed. Alexa score: 545
+|-UFODigest (2014-01-29T13:49:58+00:00) : http://ufodigest.com/article/edward-snowden-0129. Alexa score: 138973
 Running parser for Target Card HVAC...
-Identified root node: Abc Local Web (2014-02-06T23:56:06+00:00): http://abclocal.go.com/wpvi/story?id=9423205
-|-my.news.yahoo.com (2014-02-07T17:42:41+00:00) : http://my.news.yahoo.com/pa-vendor-possible-backdoor-target-174521391.html
-|--Journal (2014-02-07T18:25:38+00:00) : http://www.nujournal.com/page/content.detail/id/453481/Pa--vendor-was-possible-backdoor-to-Target-data.html?isap=1&nav=5032
-Identified root node: Bangor Daily News (2014-02-07T10:04:33+00:00): http://bangordailynews.com/2014/02/07/business/target-vendor-says-hackers-breached-data-link-used-for-billing/
-|-1070 WINA Newsradio (2014-02-07T11:51:56+00:00) : http://wina.com/news/030030-target-hackers-breached-data-link-used-for-billing/
-|--790 KGMI News Talk (2014-02-07T11:59:05+00:00) : http://kgmi.com/news/030030-target-hackers-breached-data-link-used-for-billing/
-Identified root node: The News & Observer (2014-04-07T22:09:09+00:00): http://www.newsobserver.com/2014/04/07/3766312/business-highlights.html
-|-The Inter Mountain (2014-04-08T17:57:25+00:00) : http://www.theintermountain.com/page/content.detail/id/569470/Business-Briefcase.html?nav=5007
-Identified root node: Norristown Times Herald (2014-02-06T23:56:06+00:00): http://www.timesherald.com/business/20140207/pennsylvania-vendor-was-possible-backdoor-to-target-data
-|-WPTV (2014-02-08T03:36:49+00:00) : http://www.wptv.com/news/national/target-data-breach-fazio-mechanical-services-pennsylvania-vendor-was-possible-backdoor-to-data
-|--theday.com (2014-02-08T10:53:28+00:00) : http://www.theday.com/article/20140208/BIZ03/302089932/1044
-Identified root node: Reuters (2014-02-06T23:27:28+00:00): http://uk.reuters.com/article/2014/02/06/target-breach-vendor-idUKL2N0LB1TM20140206?feedType=RSS&feedName=rbssFinancialServicesAndRealEstateNews
-|-CNBC (2014-02-06T23:27:28+00:00) : http://www.cnbc.com/id/101397539
-|--Thomson Reuters (2014-02-06T23:41:47+00:00) : http://www.reuters.com/article/2014/02/06/us-target-breach-vendor-idUSBREA1523E20140206
-Identified root node: Ukiah Daily Journal (2014-02-06T23:56:06+00:00): http://www.ukiahdailyjournal.com/ci_25085471/hackers-may-have-gotten-target-data-through-pennsylvania
-|-Marin Independent Journal (2014-02-06T23:56:06+00:00) : http://www.marinij.com/business/ci_25085471/hackers-may-have-gotten-target-data-through-pennsylvania
-|--San Jose Mercury News (2014-02-06T23:56:06+00:00) : http://www.mercurynews.com/business/ci_25085466/hackers-may-have-gotten-target-data-through-pennsylvania
-Identified root node: Observer & Eccentric Newspapers (2014-02-06T14:23:26+00:00): http://www.hometownlife.com/usatoday/article/5255331
-|-Daily Journal (2014-02-06T15:56:30+00:00) : http://www.thedailyjournal.com/usatoday/article/5255331
-|--Greenville News (2014-02-06T16:03:39+00:00) : http://www.greenvilleonline.com/usatoday/article/5255331
-|---Staunton News Leader (2014-02-06T16:10:49+00:00) : http://www.newsleader.com/usatoday/article/5255331
-|----USA Today (2014-02-06T18:12:30+00:00) : http://www.usatoday.com/story/cybertruth/2014/02/06/hvac-firms-logon-used-in-target-breach/5255331/
-Identified root node: Recordpub (2014-02-07T21:10:16+00:00): http://www.recordpub.com/ap%20general%20news/2014/02/07/hackers-may-have-used-pa-company-to-hit-target
-|-stowsentry.com (2014-02-07T21:10:16+00:00) : http://www.stowsentry.com/ap%20general%20news/2014/02/07/hackers-may-have-used-pa-company-to-hit-target
-|--Aurora Advocate (2014-02-07T21:10:16+00:00) : http://www.auroraadvocate.com/ap%20general%20news/2014/02/07/hackers-may-have-used-pa-company-to-hit-target
-|---San Mateo Daily Journal (2014-02-08T11:29:16+00:00) : http://www.smdailyjournal.com/articles/business/2014-02-08/hackers-may-have-used-pittsburgh-company-to-hit-target/1776425117850.html
-Identified root node: Yahoo Singapore Finance (2014-02-07T22:21:51+00:00): http://sg.finance.yahoo.com/news/hackers-may-used-pa-company-191843425--finance.html
-|-Telegraph Herald (2014-02-08T11:29:16+00:00) : http://www.thonline.com/news/national_world/article_a3670237-6015-5429-8476-9b0aa407f3ed.html
-|--The Seattle Times (2014-02-08T19:43:11+00:00) : http://seattletimes.com/html/nationworld/2022862655_apxtargetdatabreachvendor.html
-|---Commercial Dispatch (2014-02-08T23:53:44+00:00) : http://www.cdispatch.com/news/article.asp?aid=31026
-|----Signal SCV (2014-02-09T12:53:59+00:00) : http://www.signalscv.com/section/287/article/114074/
+Identified root node: The Seattle Times (2014-02-08T19:43:11+00:00) : http://seattletimes.com/html/nationworld/2022862655_apxtargetdatabreachvendor.html. Alexa score: 3170
+|-Commercial Dispatch (2014-02-08T23:53:44+00:00) : http://www.cdispatch.com/news/article.asp?aid=31026. Alexa score: 816137
+Identified root node: Bangor Daily News (2014-02-07T10:04:33+00:00) : http://bangordailynews.com/2014/02/07/business/target-vendor-says-hackers-breached-data-link-used-for-billing/. Alexa score: 22462
+|-1070 WINA Newsradio (2014-02-07T11:51:56+00:00) : http://wina.com/news/030030-target-hackers-breached-data-link-used-for-billing/. Alexa score: 1227206
+|--790 KGMI News Talk (2014-02-07T11:59:05+00:00) : http://kgmi.com/news/030030-target-hackers-breached-data-link-used-for-billing/. Alexa score: 795811
+Identified root node: Reuters (2014-02-06T23:27:28+00:00) : http://uk.reuters.com/article/2014/02/06/target-breach-vendor-idUKL2N0LB1TM20140206?feedType=RSS&feedName=rbssFinancialServicesAndRealEstateNews. Alexa score: 272
+|-CNBC (2014-02-06T23:27:28+00:00) : http://www.cnbc.com/id/101397539. Alexa score: 630
+|--Thomson Reuters (2014-02-06T23:41:47+00:00) : http://www.reuters.com/article/2014/02/06/us-target-breach-vendor-idUSBREA1523E20140206. Alexa score: 272
+Identified root node: Ukiah Daily Journal (2014-02-06T23:56:06+00:00) : http://www.ukiahdailyjournal.com/ci_25085471/hackers-may-have-gotten-target-data-through-pennsylvania. Alexa score: 479124
+|-Marin Independent Journal (2014-02-06T23:56:06+00:00) : http://www.marinij.com/business/ci_25085471/hackers-may-have-gotten-target-data-through-pennsylvania. Alexa score: 87019
+|--San Jose Mercury News (2014-02-06T23:56:06+00:00) : http://www.mercurynews.com/business/ci_25085466/hackers-may-have-gotten-target-data-through-pennsylvania. Alexa score: 4647
+Identified root node: Observer & Eccentric Newspapers (2014-02-06T14:23:26+00:00) : http://www.hometownlife.com/usatoday/article/5255331. Alexa score: 219008
+|-Daily Journal (2014-02-06T15:56:30+00:00) : http://www.thedailyjournal.com/usatoday/article/5255331. Alexa score: 266811
+|--Greenville News (2014-02-06T16:03:39+00:00) : http://www.greenvilleonline.com/usatoday/article/5255331. Alexa score: 103473
+|---Staunton News Leader (2014-02-06T16:10:49+00:00) : http://www.newsleader.com/usatoday/article/5255331. Alexa score: 163291
+|----USA Today (2014-02-06T18:12:30+00:00) : http://www.usatoday.com/story/cybertruth/2014/02/06/hvac-firms-logon-used-in-target-breach/5255331/. Alexa score: 263
 Running parser for Michael Vick Puppy...
 Running parser for Felix Baumgardner Jump...
-Identified root node: AL.com Bloggers (2012-10-14T22:48:16+00:00): http://blog.al.com/wire/2012/10/skydiver_felix_baumgartner_beg.html
-|-ABC 15 News (2012-10-14T23:59:51+00:00) : http://www.abc15.com/news/local-news/water-cooler/felix-baumgartner-jump-live-video-skydiver-gets-ready-for-bid-to-break-sound-barrier
-|--The Huffington Post (2012-10-15T01:40:04+00:00) : http://www.huffingtonpost.com/2012/10/14/felix-baumgartner-jump-redbull-skydive_n_1965299.html
-Identified root node: Montgomery Advertiser (2014-02-03T23:09:33+00:00): http://www.montgomeryadvertiser.com/usatoday/article/5189863
-|-Oshkosh Northwestern (2014-02-03T23:23:52+00:00) : http://www.thenorthwestern.com/usatoday/article/5189863
+Identified root node: AL.com Bloggers (2012-10-14T22:48:16+00:00) : http://blog.al.com/wire/2012/10/skydiver_felix_baumgartner_beg.html. Alexa score: 5579
+|-ABC 15 News (2012-10-14T23:59:51+00:00) : http://www.abc15.com/news/local-news/water-cooler/felix-baumgartner-jump-live-video-skydiver-gets-ready-for-bid-to-break-sound-barrier. Alexa score: 20628
+Identified root node: Montgomery Advertiser (2014-02-03T23:09:33+00:00) : http://www.montgomeryadvertiser.com/usatoday/article/5189863. Alexa score: 149399
+|-Oshkosh Northwestern (2014-02-03T23:23:52+00:00) : http://www.thenorthwestern.com/usatoday/article/5189863. Alexa score: 355983
 Running parser for Balloon boy...
-Identified root node: WBNS 10TV Columbus (2013-10-22T15:25:55+00:00): http://www.10tv.com/content/stories/apexchange/2013/10/22/in--exchange-unlikely-journey.html
-|-WSBT 22 (2013-10-22T15:25:55+00:00) : http://www.wsbt.com/news/local/balloon-honoring-indiana-boy-warms-hearts-in-mass/22561348
-Identified root node: Valleycentral.com (2009-10-14T23:56:51+00:00): http://www.valleycentral.com/news/story.aspx?id=363512
-|-ABC 4 (2009-10-14T23:56:51+00:00) : http://www.4utah.com/mostpopular/story/6-year-old-boy-seen-getting-into-balloon/d/story/Kk2g34eHo0eb8MhAoTgAOQ
 Running parser for SpaceX ISS...
 Running parser for Air France 447...
-Identified root node: Daily Telegraph (2012-04-28T06:27:35+00:00): http://www.telegraph.co.uk/technology/9231855/Air-France-Flight-447-Damn-it-were-going-to-crash.html
-|-Montreal Gazette (2012-04-30T23:57:29+00:00) : http://www.montrealgazette.com/news/FRANCE+CRASH+REPORT/6547853/story.html
-Identified root node: ABC News (2012-07-05T21:49:06+00:00): http://abcnews.go.com/Blotter/air-france-flight-447-crash-didnt-happen-expert/story?id=16717404
-|-Yahoo News (2012-07-05T23:07:50+00:00) : http://news.yahoo.com/air-france-flight-447-crash-didnt-happen-expert-162449729--abc-news-topstories.html
-Identified root node: Yahoo! (2014-03-09T23:55:08+00:00): http://uk.news.yahoo.com/missing-malaysia-airlines-flight-mh370-crash-air-france-104123400.html
-|-International Business Times (2014-03-10T10:39:22+00:00) : http://www.ibtimes.co.uk/missing-malaysia-airlines-flight-mh370-crash-air-france-flight-447-that-killed-all-board-1439572
+Identified root node: Daily Telegraph (2012-04-28T06:27:35+00:00) : http://www.telegraph.co.uk/technology/9231855/Air-France-Flight-447-Damn-it-were-going-to-crash.html. Alexa score: 223
+|-Montreal Gazette (2012-04-30T23:57:29+00:00) : http://www.montrealgazette.com/news/FRANCE+CRASH+REPORT/6547853/story.html. Alexa score: 12423
+Identified root node: ABC News (2012-07-05T21:49:06+00:00) : http://abcnews.go.com/Blotter/air-france-flight-447-crash-didnt-happen-expert/story?id=16717404. Alexa score: 414
+|-Yahoo News (2012-07-05T23:07:50+00:00) : http://news.yahoo.com/air-france-flight-447-crash-didnt-happen-expert-162449729--abc-news-topstories.html. Alexa score: 4
+Identified root node: Yahoo! (2014-03-09T23:55:08+00:00) : http://uk.news.yahoo.com/missing-malaysia-airlines-flight-mh370-crash-air-france-104123400.html. Alexa score: 4
+|-International Business Times (2014-03-10T10:39:22+00:00) : http://www.ibtimes.co.uk/missing-malaysia-airlines-flight-mh370-crash-air-france-flight-447-that-killed-all-board-1439572. Alexa score: 2209
 Running parser for Sochi Wolf...
-Identified root node: FOX News (2014-02-21T10:59:32+00:00): http://www.foxnews.com/sports/2014/02/21/5-things-to-know-about-sochi-olympics/
-|-WTHR (2014-02-21T16:21:39+00:00) : http://www.wthr.com/story/24786734/2014/02/21/5-things-to-know-about-the-sochi-olympics
-Identified root node: WTOP (2014-02-22T08:42:20+00:00): http://www.wtop.com/1320/3568119/Fridays-Highlights-at-the-Sochi-Olympics
-|-YAHOOSports (2014-02-22T23:44:17+00:00) : http://sg.sports.yahoo.com/news/friday-39-highlights-sochi-olympics-154913789--spt.html
-Identified root node: Central Pennsylvania (2014-02-21T22:12:25+00:00): http://www.pennlive.com/entertainment/index.ssf/2014/02/kimmels_wolf_hoax_abc_news_kne.html
-|-Yahoo Finance (2014-02-22T03:41:41+00:00) : http://finance.yahoo.com/news/kimmel-39-wolf-hoax-abc-news-knew-ahead-212111644.html
-Identified root node: Contra Costa Times (2014-02-20T20:33:23+00:00): http://www.contracostatimes.com/sports/ci_25189335
-|-San Jose Mercury News (2014-02-20T20:33:23+00:00) : http://www.mercurynews.com/sports/ci_25189335
-Identified root node: Oroville Mercury-Register (2014-02-20T20:33:23+00:00): http://www.orovillemr.com/digitalextras/ci_25189340/
-|-Paradise Post (2014-02-20T20:33:23+00:00) : http://www.paradisepost.com/sports/ci_25189340/
-Identified root node: greecepost.com (2014-02-20T21:23:29+00:00): http://www.greecepost.com/article/20140220/News/140229928
-|-Devils Lake Daily Journal (2014-02-20T21:52:07+00:00) : http://www.devilslakejournal.com/article/20140220/News/140229836
-Identified root node: Myfoxorl and O (2014-03-07T16:12:13+00:00): http://www.myfoxorlando.com/story/24786649/wolf-in-sochi-hotel-update
-|-FOX 9 News (2014-03-21T15:12:39+00:00) : http://www.myfoxtwincities.com/story/24786649/wolf-in-sochi-hotel-update
-|--MyFox Philadelphia (2014-03-21T15:12:39+00:00) : http://www.myfoxphilly.com/story/24786649/wolf-in-sochi-hotel-update
-Identified root node: Owen Sound Sun Times (2014-02-21T10:23:44+00:00): http://www.owensoundsuntimes.com/2014/02/20/video-shows-wolf-walking-through-sochi-athletes-village
-|-brantfordexpositor.ca (2014-02-21T10:30:54+00:00) : http://www.brantfordexpositor.ca/2014/02/20/video-shows-wolf-walking-through-sochi-athletes-village
-|--Canoe (2014-02-21T10:45:13+00:00) : http://slam.canoe.ca/Slam/Olympics/2014Sochi/News/2014/02/20/21483176.html
-Identified root node: WSOC-TV (2014-02-21T20:25:02+00:00): http://www.wsoctv.com/news/news/national/so-about-jimmy-kimmels-wolf-prank/ndXr8/
-|-WPXI (2014-02-21T21:07:59+00:00) : http://www.wpxi.com/news/news/national/so-about-jimmy-kimmels-wolf-prank/ndXr8/
-Identified root node: WPXI (2014-02-20T13:38:12+00:00): http://www.wpxi.com/news/news/us-luger-films-wolf-roaming-halls-olympic-village/ndWLC/
-|-wftv.com 9 (2014-02-20T21:16:20+00:00) : http://www.wftv.com/news/news/us-luger-films-wolf-roaming-halls-olympic-village/ndWLC/
-|--WSB-TV Atlanta (2014-02-20T21:23:29+00:00) : http://www.wsbtv.com/news/news/us-luger-films-wolf-roaming-halls-olympic-village/ndWLC/
+Identified root node: Contra Costa Times (2014-02-20T20:33:23+00:00) : http://www.contracostatimes.com/sports/ci_25189335. Alexa score: 40082
+|-San Jose Mercury News (2014-02-20T20:33:23+00:00) : http://www.mercurynews.com/sports/ci_25189335. Alexa score: 4647
+Identified root node: Oroville Mercury-Register (2014-02-20T20:33:23+00:00) : http://www.orovillemr.com/digitalextras/ci_25189340/. Alexa score: 1059186
+|-Paradise Post (2014-02-20T20:33:23+00:00) : http://www.paradisepost.com/sports/ci_25189340/. Alexa score: 1007001
+Identified root node: greecepost.com (2014-02-20T21:23:29+00:00) : http://www.greecepost.com/article/20140220/News/140229928. Alexa score: 3239703
+|-Devils Lake Daily Journal (2014-02-20T21:52:07+00:00) : http://www.devilslakejournal.com/article/20140220/News/140229836. Alexa score: 1705918
+Identified root node: Myfoxorl and O (2014-03-07T16:12:13+00:00) : http://www.myfoxorlando.com/story/24786649/wolf-in-sochi-hotel-update. Alexa score: 59563
+|-FOX 9 News (2014-03-21T15:12:39+00:00) : http://www.myfoxtwincities.com/story/24786649/wolf-in-sochi-hotel-update. Alexa score: 57054
+|--MyFox Philadelphia (2014-03-21T15:12:39+00:00) : http://www.myfoxphilly.com/story/24786649/wolf-in-sochi-hotel-update. Alexa score: 20861
+Identified root node: Owen Sound Sun Times (2014-02-21T10:23:44+00:00) : http://www.owensoundsuntimes.com/2014/02/20/video-shows-wolf-walking-through-sochi-athletes-village. Alexa score: 293859
+|-brantfordexpositor.ca (2014-02-21T10:30:54+00:00) : http://www.brantfordexpositor.ca/2014/02/20/video-shows-wolf-walking-through-sochi-athletes-village. Alexa score: 238815
+|--Canoe (2014-02-21T10:45:13+00:00) : http://slam.canoe.ca/Slam/Olympics/2014Sochi/News/2014/02/20/21483176.html. Alexa score: 3830
+Identified root node: WPXI (2014-02-20T13:38:12+00:00) : http://www.wpxi.com/news/news/us-luger-films-wolf-roaming-halls-olympic-village/ndWLC/. Alexa score: 35881
+|-wftv.com 9 (2014-02-20T21:16:20+00:00) : http://www.wftv.com/news/news/us-luger-films-wolf-roaming-halls-olympic-village/ndWLC/. Alexa score: 30281
+|--WSB-TV Atlanta (2014-02-20T21:23:29+00:00) : http://www.wsbtv.com/news/news/us-luger-films-wolf-roaming-halls-olympic-village/ndWLC/. Alexa score: 13187
+Identified root node: WSOC-TV (2014-02-21T20:25:02+00:00) : http://www.wsoctv.com/news/news/national/so-about-jimmy-kimmels-wolf-prank/ndXr8/. Alexa score: 39258
+|-WPXI (2014-02-21T21:07:59+00:00) : http://www.wpxi.com/news/news/national/so-about-jimmy-kimmels-wolf-prank/ndXr8/. Alexa score: 35881
 Running parser for Affordable Care Act...
 Running parser for AptiQuant Internet Explorer IQ...
-Identified root node: WCPO (2011-08-01T23:59:07+00:00): http://www.wcpo.com/news/science-tech/new-study-says-the-web-browser-you-choose-to-use-could-say-a-lot-about-your-iq
-|-ABC Action News (2011-08-02T14:53:54+00:00) : http://www.abcactionnews.com/news/science-and-technology/new-study-says-the-web-browser-you-choose-to-use-could-say-a-lot-about-your-iq-wcpo1312295408071
+Identified root node: WCPO (2011-08-01T23:59:07+00:00) : http://www.wcpo.com/news/science-tech/new-study-says-the-web-browser-you-choose-to-use-could-say-a-lot-about-your-iq. Alexa score: 29077
+|-ABC Action News (2011-08-02T14:53:54+00:00) : http://www.abcactionnews.com/news/science-and-technology/new-study-says-the-web-browser-you-choose-to-use-could-say-a-lot-about-your-iq-wcpo1312295408071. Alexa score: 49012
 Running parser for Will Smith Dead...
 Running parser for Betty White Dead...
-Identified root node: WWL-TV (2013-10-08T08:25:51+00:00): http://www.wwltv.com/news/national/226859981.html
-|-WPTV (2013-10-08T15:42:31+00:00) : http://www.wptv.com/dpp/entertainment/betty-white-will-join-madame-tussauds-museum-in-wax
 Running parser for KFC Mutant Chicken...
-Identified root node: Allentown Morning Call (2014-04-04T23:02:49+00:00): http://articles.mcall.com/2014-04-04/news/mc-bw-john-brown-20140404_1_john-brown-sahl-communications-snake
-|-The Morning Call (2014-04-04T23:17:08+00:00) : http://www.mcall.com/news/local/white/mc-bw-john-brown-20140404,0,818704.column
+Identified root node: Allentown Morning Call (2014-04-04T23:02:49+00:00) : http://articles.mcall.com/2014-04-04/news/mc-bw-john-brown-20140404_1_john-brown-sahl-communications-snake. Alexa score: 32201
+|-The Morning Call (2014-04-04T23:17:08+00:00) : http://www.mcall.com/news/local/white/mc-bw-john-brown-20140404,0,818704.column. Alexa score: 32201
 =========================================
-Got 126 root sources for plagarism consideration factor 0.8
+Got 96 root sources for plagarism consideration factor 0.8
 =========================================
 Identifying most frequent root sources...
 These would be great targets to compromise
 =========================================
+WSOC-TV has 1 root nodes of plagarism.
+Examiner has 1 root nodes of plagarism.
+The Seattle Times has 1 root nodes of plagarism.
 Bangor Daily News has 1 root nodes of plagarism.
-The News & Observer has 1 root nodes of plagarism.
-Norristown Times Herald has 1 root nodes of plagarism.
 Ukiah Daily Journal has 1 root nodes of plagarism.
 Observer & Eccentric Newspapers has 1 root nodes of plagarism.
-Recordpub has 1 root nodes of plagarism.
-Yahoo Singapore Finance has 1 root nodes of plagarism.
 AL.com Bloggers has 1 root nodes of plagarism.
 Montgomery Advertiser has 1 root nodes of plagarism.
-WBNS 10TV Columbus has 1 root nodes of plagarism.
-Valleycentral.com has 1 root nodes of plagarism.
 ABC News has 1 root nodes of plagarism.
 Yahoo! has 1 root nodes of plagarism.
-WTOP has 1 root nodes of plagarism.
-Central Pennsylvania has 1 root nodes of plagarism.
 Contra Costa Times has 1 root nodes of plagarism.
 Oroville Mercury-Register has 1 root nodes of plagarism.
 greecepost.com has 1 root nodes of plagarism.
 Myfoxorl and O has 1 root nodes of plagarism.
-Cincinnati.com has 1 root nodes of plagarism.
-FOX News has 2 root nodes of plagarism.
+Owen Sound Sun Times has 1 root nodes of plagarism.
+Capital Public Radio has 1 root nodes of plagarism.
 Daily Telegraph has 2 root nodes of plagarism.
 Reuters has 2 root nodes of plagarism.
-The Huffington Post has 2 root nodes of plagarism.
 Reuters Group PLC has 2 root nodes of plagarism.
 =========================================
 Identifying most influential root sources by number of articles
 These would also be great sources to compromise
 =========================================
-ABC News influences 1 articles
+The Seattle Times influences 1 articles
 Daily Telegraph influences 1 articles
 Business Spectator influences 1 articles
-WBNS 10TV Columbus influences 1 articles
-Hutchinson News influences 1 articles
+AL.com Bloggers influences 1 articles
 Reuters Group PLC influences 1 articles
-Norristown Times Herald influences 2 articles
-Myfoxorl and O influences 2 articles
-Owen Sound Sun Times influences 2 articles
 Ukiah Daily Journal influences 2 articles
 Reuters influences 2 articles
-AL.com Bloggers influences 2 articles
 Bangor Daily News influences 2 articles
-MSN influences 2 articles
 Reuters influences 2 articles
+News Talk 610 CKTB influences 2 articles
+Cincinnati.com influences 2 articles
+WPXI influences 2 articles
+Owen Sound Sun Times influences 2 articles
+Myfoxorl and O influences 2 articles
 wcti12.com influences 2 articles
-Abc Local Web influences 2 articles
 IT World influences 3 articles
-Recordpub influences 3 articles
-Observer & Eccentric Newspapers influences 4 articles
 KSAT influences 5 articles
 The Malaysian Digest influences 5 articles
 kenoradailyminerandnews.com influences 6 articles
-Guelph Mercury influences 8 articles
-The Huffington Post influences 9 articles
 =========================================
 Joining the two analyses above
 =========================================
+The Seattle Times,
 Bangor Daily News,
-Norristown Times Herald,
 Ukiah Daily Journal,
-Observer & Eccentric Newspapers,
-Recordpub,
 AL.com Bloggers,
-WBNS 10TV Columbus,
-ABC News,
 Myfoxorl and O,
+Owen Sound Sun Times,
 Daily Telegraph,
 Reuters,
-The Huffington Post,
 Reuters Group PLC
 =========================================
-Got 13 targets!
+Got 9 targets!
