@@ -1,11 +1,14 @@
 require 'rubygems'
 require 'benchmark'
+require 'readability_parser'
 require 'pry'
 
 require_relative './api/api.rb'
 
 class Runner
-  PAGES_TO_FETCH = 150
+  class NoMoreResultsAdded < StandardError ; end
+
+  PAGES_TO_FETCH = 300
 # Access News API for topic
 # For every result (preferrably exhausting pagination if possible):
 #   Get the content of the news article
@@ -25,34 +28,39 @@ class Runner
   def run!
     puts "Working on query '#{@query}'"
     fetch_all_articles
-    dump_articles_to_json!
   end
 
   private
 
-  def dump_articles_to_json!
-    File.open("./#{@query.gsub(' ', '_')}.json", 'w') { |f| f.write(@articles.to_json) }
-  end
-
   def fetch_all_articles
     @articles ||= []
+    failures_allowed = 3
     (0...PAGES_TO_FETCH).each do |i|
-      (retrieve_article_slice(@query, i)) if bing.can_query?
+      begin
+        (retrieve_article_slice(@query, i)) if bing.can_query?
+      rescue Runner::NoMoreResultsAdded
+        failures_allowed -= 1
+        break if failures_allowed == 0
+      end
     end
   end
 
   def retrieve_article_slice(q, i)
     puts "Getting articles #{i*bing.result_set_size} - #{(i+1)*bing.result_set_size}"
     result_set = bing.query(q, i*bing.result_set_size)
+    initial_article_count = Article.count
     result_set[0][:News].each do |result|
-      @articles << {
+      a = Article.new(
         title: result[:Title],
         url: result[:Url],
         source: result[:Source],
         description: result[:Description],
-        date: result[:Date]
-      }
+        date: DateTime.parse(result[:Date]),
+        keyword: q
+      )
+      a.save
     end
+    raise Runner::NoMoreResultsAdded if Article.count == initial_article_count
   end
 
   def bing

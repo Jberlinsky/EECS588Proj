@@ -9,7 +9,11 @@ class NewsApi::BingManager < Api::BaseManager
   protected
 
   def execute_query(q, offset)
-    client.search(q, offset)
+    begin
+      client.search(q, offset)
+    rescue JSON::ParserError
+      raise "Need new Bing tokens :("
+    end
   end
 
   private

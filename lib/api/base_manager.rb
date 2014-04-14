@@ -73,8 +73,8 @@ class Api::BaseManager
   end
 
   def ensure_api_keys_are_valid!
-    unless @api_keys.map { |k| k.is_a?(Api::ApiKey) }.uniq == [true]
-      raise ArgumentError, "API Keys must be instances of NewsApi::ApiKey"
+    unless @api_keys.map { |k| k.is_a?(ApiKey) }.uniq == [true]
+      raise ArgumentError, "API Keys must be instances of ApiKey. Instead got #{@api_keys.map { |k| k.is_a?(ApiKey) }.uniq}"
     end
   end
 
@@ -83,7 +83,7 @@ class Api::BaseManager
   end
 
   def client
-    @clients[active_api_key.key.to_s] ||= create_api_client(active_api_key.key)
+    @clients[active_api_key.api_key.to_s] ||= create_api_client(active_api_key.api_key)
   end
 
   def create_api_client(key)

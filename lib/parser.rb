@@ -3,6 +3,9 @@ require 'pry'
 require 'rgl/adjacency'
 require 'rgl/dot'
 require 'rgl/topsort'
+require 'parallel'
+require 'uhferret'
+require_relative './api/pagerank_manager.rb'
 
 class Array
   def bucket_sort
@@ -41,35 +44,6 @@ end
 
 # This is what gets stored in the dependency graph
 # #to_s allows us to use RGL while maintaining some semblance of state (date, url) from the article
-GraphedArticle = Struct.new(:name, :date, :url, :graph, :keyword) do
-  def to_s
-    name
-  end
-
-  def full_description(graph,dependents=false)
-    ret = "In this graph, #{name}, published on #{date} (#{url}), influences #{graph.out_degree(self)} articles"
-    if dependents
-      ret << "\nLeads to the following sources: "
-      printed = []
-      adjacent = graph.adjacent_vertices(self)
-
-      while adjacent.count > 0 do
-        v = adjacent.shift
-        next if printed.include?(v) || v == nil
-        ret << v.name
-        ret << "\n"
-        printed << v
-        adjacent += graph.adjacent_vertices(v)
-      end
-    end
-    ret
-  end
-
-  def influence(graph=self.graph)
-    graph.out_degree(self)
-  end
-end
-
 class Parser
   attr_accessor :query, :alchemy_api_keys
   attr_accessor :articles, :grouped_articles, :dependency_graphs
@@ -78,26 +52,33 @@ class Parser
   NUMBER_OF_RELEVANT_KEYWORDS_TO_CONSIDER = 1
   NUMBER_OF_KEYWORDS_TO_CONSIDER = 5
 
-  def initialize(query, alchemy_api_keys)
+  DEFAULT_PLAGARISM_SIMILARITY_THRESHOLD = 0.9
+  # 3 - 41
+  # 4 - 32
+  # 5 - 32
+  # 6 - 32
+  # 7 - 32
+  # 8 - 32
+  # 9 - 6
+  # 10 - 32
+
+  def initialize(query, alchemy_api_keys, plagarism_similarity_threshold = DEFAULT_PLAGARISM_SIMILARITY_THRESHOLD)
     @query = query
     @alchemy_api_keys = Array(alchemy_api_keys)
+    @plagarism_similarity_threshold = plagarism_similarity_threshold
   end
 
-  def run!(with_grouped_data_fixture = false)
-    unless with_grouped_data_fixture
-      parse_json
-      group_articles_by_keywords!
-      dump_grouped_json
-    else
-      load_grouped_json
-    end
-    #find_first_article_for_each_source!
-    construct_dependency_graphs!
-    #write_dependency_graphs!
-    find_epicenters_and_most_influential
+  def run!
+    parse_json
+    clean_tmp_directory!
+    perform_plagarism_detection!
   end
 
   private
+
+  def clean_tmp_directory!
+    FileUtils.rm_rf(Dir.glob('./tmp/*'))
+  end
 
   def dump_grouped_json
     File.open("./#{query.gsub(' ', '_')}_grouped.json", 'w') { |f| f.write(@grouped_articles.to_json) }
@@ -107,96 +88,66 @@ class Parser
     @grouped_articles = JSON.load(File.new("#{@query.gsub(' ', '_')}_grouped.json"))
   end
 
-  def write_dependency_graphs!
-    @dependency_graphs.each do |kw, graph|
-      File.open("./graph_#{kw.gsub(' ', '_')}.dot", 'w') { |f| f.write(graph.to_dot_graph.to_s) }
-    end
-  end
-
-  def find_epicenters_and_most_influential
-    # TODO implement
-    # Find the most important node in each graph
-    best_vertices = []
-    @dependency_graphs.each do |kw, graph|
-      next if graph.vertices.count <= 10
-      important_bucket = graph.vertices.buckets_by { |v| v.influence(graph) }.last
-      best = important_bucket.sort_by(&:date).first
-      # Group the vertices by order of magnitude; pick the most important order of magnitude
-      # Pick the first one reported in that order of magnitude
-      if best.influence(graph) > 10
-        puts "Keyword: #{kw}:"
-        puts best.full_description(graph, true)
-      end
-    end
-  end
-
   def parse_json
-    @articles = JSON.load(File.new("#{@query.gsub(' ', '_')}.json"))
+    @articles = Article.all.all(keyword: @query)
   end
 
-  def group_articles_by_keywords!
-    group_relevances = Hash.new { |hash, key| hash[key] = [] } # HACK that allows arbitrary initialization to work. Initialize all new keys to empty array
-    @grouped_articles = Hash.new { |hash, key| hash[key] = [] }
-    considered_articles = (NUMBER_OF_ARTICLES_TO_TAG == 0 ? @articles : @articles.first(NUMBER_OF_ARTICLES_TO_TAG))
-
-    considered_articles.each do |article|
-      # Take the top 5 keywords from the article, sorted by relevance
-      tags = alchemy_api.query(article['url'])['keywords']
-
-      tags = tags.sort do |a,b|
-        a['relevance'].to_f <=> b['relevance'].to_f
-      end.last(NUMBER_OF_RELEVANT_KEYWORDS_TO_CONSIDER)
-
-      # Put the article into a group for each of these categories
-      tags.each do |tag|
-        @grouped_articles[tag['text'].downcase] << article
-        # Construct a parallel data set to enable us to sort groups by total relevance...
-        group_relevances[tag['text'].downcase] << tag['relevance'].to_f
-      end
+  def perform_plagarism_detection!
+    # Dump contents of articles to tmp files
+    # Add tmp files to uhferret
+    # Run uhferret
+    @ferret = UHFerret::Ferret.new
+    @articles.each do |article|
+      File.open("./tmp/#{article.filename}.tmp", 'w') { |f| f.write(article.contents) }
+      @ferret.add("./tmp/#{article.filename}.tmp")
     end
+    @ferret.run
 
-    group_relevances.each do |kw, vals|
-      avg = vals.inject(:+)/vals.count
-      group_relevances[kw] = avg
-    end
+    @dependency_graph = build_adjacency_graph
 
-    # Make sure that we pick the keywords that have the most relevance and sufficient articles
-    grouped_articles = Hash[@grouped_articles.sort_by { |k, v| v.count }.select do |k, v|
-      v.count > 1
-    end.reverse[0..NUMBER_OF_KEYWORDS_TO_CONSIDER].sort_by { |k, v| group_relevances[k].to_f }[0..NUMBER_OF_KEYWORDS_TO_CONSIDER]]
-  end
+    @ferret.each_pair do |i,j|
+      if @ferret.resemblance(i, j) > @plagarism_similarity_threshold
+        # Add to the DAG
+        article_1 = get_article_by_filename(@ferret[i].filename)
+        article_2 = get_article_by_filename(@ferret[j].filename)
+        next if article_1.source == article_2.source # Do not consider self-plagarism
 
-  def find_first_article_for_each_source!
-    @grouped_articles = @grouped_articles.each do |kw, articles|
-      grouped_articles = articles.group_by { |article| article['source'] }
-      grouped_articles.each do |source, source_articles|
-        grouped_articles[source] = source_articles.min { |article| DateTime.parse(article['date']) }
-      end.values
-    end
-  end
-
-  def construct_dependency_graphs!
-    # TODO should this be solely based on date?
-    # TODO verify that this works as expected...
-    @dependency_graphs = @grouped_articles
-    @dependency_graphs.each do |keyword, articles|
-      map = build_adjacency_graph
-      found_a_vertex = false
-      articles.each do |article|
-        vertices = map.vertices.dup
-        vertices.each do |existing_vertex|
-          next if existing_vertex.to_s == article['source']
-          found_a_vertex = true
-          if is_later_than(existing_vertex, article)
-            map.add_edge(existing_vertex, encode_article_to_vertex(article))
-          else
-            map.add_edge(encode_article_to_vertex(article), existing_vertex)
-          end
+        if is_later_than(article_1, article_2)
+          @dependency_graph.add_edge(article_1, article_2)
+        else
+          @dependency_graph.add_edge(article_2, article_1)
         end
-        map.add_vertex(encode_article_to_vertex(article)) unless found_a_vertex
       end
-      @dependency_graphs[keyword] = map
     end
+    @dependency_graph.write_to_graphic_file('png')
+    root_nodes = []
+
+    begin
+      iterator = @dependency_graph.topsort_iterator
+      next_is_root = true
+      depth = 0
+      while root_node = iterator.basic_forward
+        if next_is_root
+          next if @dependency_graph.out_degree(root_node) == 0
+          root_nodes.last[1] = depth if root_nodes.any?
+          depth = 0
+          puts "Identified root node: #{root_node}: #{root_node.url}"
+          root_nodes << [root_node.id, 0]
+          next_is_root = false
+        else
+          depth += 1
+          print "|"
+          depth.times { print "-" }
+          puts "#{root_node} : #{root_node.url}"
+        end
+        next_is_root = true if (@dependency_graph.out_degree(root_node) || 0) == 0
+      end
+    rescue Exception => ex ; end
+    return root_nodes
+  end
+
+  def get_article_by_filename(filename)
+    Article.get(filename.gsub(".tmp", "").to_i)
   end
 
   def build_adjacency_graph
@@ -205,18 +156,26 @@ class Parser
 
   def is_later_than(existing_vertex, article)
     extract_date(existing_vertex) < extract_date(article)
+  rescue
+    binding.pry
   end
 
   def extract_date(article)
     if article.is_a?(Hash) && article['date'] != nil
       return DateTime.parse(article['date'])
-    elsif article.is_a?(GraphedArticle)
-      return DateTime.parse(article.date)
+    elsif article.is_a?(Article)
+      return article.date
     end
   end
 
-  def encode_article_to_vertex(article_obj)
-    GraphedArticle.new(article_obj['source'], article_obj['date'], article_obj['url'])
+  def encode_article_to_vertex(article_obj, keyword)
+    a = Article.new
+    a.name = article_obj['source']
+    a.date = DateTime.parse(article_obj['date'])
+    a.url = article_obj['url']
+    a.keyword = keyword
+    a.save
+    a
   end
 
   def alchemy_api
