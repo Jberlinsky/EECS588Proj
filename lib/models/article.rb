@@ -14,6 +14,7 @@ class Article
   property :keyword, String
   property :alexa_ranking, Integer
   property :parsed_contents, Text
+  property :is_ssl, Boolean
 
   validates_uniqueness_of :url
 

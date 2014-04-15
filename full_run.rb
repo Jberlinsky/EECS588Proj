@@ -4,6 +4,7 @@ require_relative './lib/extractor.rb'
 require_relative './lib/article_content_downloader.rb'
 require_relative './lib/models/models.rb'
 require_relative './lib/article_ranker.rb'
+require_relative './lib/source_ssl_checker.rb'
 
 #require 'facets'
 
@@ -69,6 +70,10 @@ end
 puts "Getting Alexa rankings..."
 Article.without_alexa_ranking.each do |article|
   ArticleRanker.perform(article.id)
+end
+
+QUERIES.each do |query|
+  #SourceSSLChecker.new(query).run!
 end
 
 root_nodes = []
